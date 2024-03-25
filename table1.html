@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Table</title>
+</head>
+<body>
+    <center>
+     <h1>Multiple Table</h1>
+      <input type="number" id="number"><br>
+      <button onclick="multipleTable()">Submit</button>
+      <div id="display"></div> 
+    </center>  
+    <script>
+        function multipleTable()
+          {
+          getdata=document.getElementById("number").value;
+          putdata=document.getElementById("display");
+        
+         for(let i=1; i<=10; i++)
+         {
+            putdata.innerHTML += getdata+ "X" + i+ "=" + getdata*i + "<br>";
+         }
+        }
+    </script> 
+</body>
+</html>
